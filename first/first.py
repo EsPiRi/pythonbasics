@@ -22,3 +22,49 @@ print(s[-2])
 #concatenating strings
 string4="hello "+"world"
 print(string4)
+
+#repeating strings
+string5="**/\**"*5
+print(string5)
+
+#size of string
+print(len("hello world"))
+
+#slicing strings
+string6="program"
+print(string6[3:5]) #gr
+print(string6[3:6]) #gra
+print(string6[4:]) #ram
+print(string6[:4]) #prog
+
+#lowering and uppering strings
+string7="Grand River"
+print(string7.lower())
+print(string7.upper())
+
+
+#str() method: converts the number into strings
+pi=3.1416
+print(pi+5)  #concatenating only works with the same type of variables
+print(str(pi)+"5")
+
+#octal, binary and hexadecimal numbers
+numOctal=0o10
+numHex=0xABC
+numBin=0b01101
+print(str(numOctal)+" "+str(numHex)+" "+str(numBin))
+
+#converting numbers into binary octal and hexadecimal
+num1=123
+print(str(bin(num1))+" "+str(oct(num1))+" "+str(hex(num1)))
+
+#complex numbers can be held in python
+comp1=3+5j
+comp2=-3-4j
+print(comp1+comp2)
+
+#date and time in python
+from datetime import datetime
+print(datetime.now())
+from time import strftime
+print(strftime("%Y-%m-%d %H:%M:%S"))
