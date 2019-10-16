@@ -1,3 +1,6 @@
+from conditional import your_choice
+from myFunctions import *
+
 a = range(5)
 print(a)
 print(list(range(5)))
@@ -9,7 +12,16 @@ print(type(a))
 print(type("string"))
 print(type(5))
 print(type(2+3j))
-name=input("May i know your name? ")
-print("It's a pleasure to meet you "+name+"!")
-age=input("Your age, please? ")
-print("So you are "+age+" years old, "+name+"!")
+
+#name=input("May i know your name? ")
+#print("It's a pleasure to meet you "+name+"!")
+#age=input("Your age, please? ")
+#print("So you are "+age+" years old, "+name+"!")
+
+print(your_choice(6))
+print(your_choice(3))
+print(your_choice(1))
+print(your_choice(0))
+print(absolute_value(-5))
+print(absolute_value(10))
+print(love_pizza())
